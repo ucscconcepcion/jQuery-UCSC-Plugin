@@ -3,6 +3,7 @@
 
 * jQuery 1.10.0+
 * Bootstrap 3+
+
 ## <a name='TOC'>Métodos</a>
 
 * [modal](#modal)
