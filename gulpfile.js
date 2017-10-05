@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var concat = require('gulp-concat');
+//var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
 var paths = {
@@ -10,7 +10,7 @@ var paths = {
 gulp.task('js', function() {
   
   gulp.src(paths.js)
-  .pipe(concat('libjs'))
+  //.pipe(concat('libjs'))
   .pipe(uglyfy())
   .pipe(gulp.dest('minjs'));
 

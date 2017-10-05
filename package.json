@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/ucscconcepcion/jquery-ucsc-plugin#readme",
   "dependencies": {
-    "express": "^4.16.1"
+    "express": "^4.16.1",
+    "gulp": "^3.9.1"
   },
   "devDependencies": {
     "gulp-install": "^1.1.0",
