@@ -14,24 +14,88 @@
 * [success](#succes)
 * [error](#error)
 
-## <a name='modal'>Modal</a>
+## <a name='modal'>Uso Modal</a>
 
 ```javascript
+
+var body = 'Hola mundo!';
+
 $ucsc.modal({
-  title:"Titulo de la ventana",
-  message:"Este es un mensaje"
+	id: "customModal",
+	title: "",
+	body: body,
+	options: {
+		size: "lg",
+		scroll: false,
+		loading: false,
+		backdrop: 'static',
+		keyboard: false,
+		scrollTop: true
+	},
+	button: {
+		close:{
+			name : "close",
+			id:"buttonClose",
+			label: "Cerrar",
+			status: true
+		},
+		confirm:{
+			name : "confirm",
+			id:"buttonConfirm",
+			label: "Confirmar",
+			status: false
+		}
+	}
 });
 ```
 #### Opciones
+
+##### modal
 Nombre | Tipo | Valor defecto | Descripción
 -------|------|---------------|---------
+id | string | "customModal" | ID
 title | string | "" | Título del modal
-message | string | "" | Mensaje dentro del cuerpo del modal
-scrollable | boolean | false | Habilita scroll en la ventana (true/false)
-closeButton | boolean | true | Habilita botón cerrar modal (true/false)
-confirmButton | boolean | true | Habilita botón confirmar modal (true/false)
-confirmIdButton | string | "confirmButton" | ID botón confirmar
-labelconfirmButton | string | "Confirmar" | Nombre del botón confirmar
-labelButton | string | "Cancelar" | Nombre del botón que cierra modal
-idModal | string | "customModal" | ID del modal
-size | string | "lg" | Tamaños del modal. Opciones: sm, md y lg
+body | string | "" | Cuerpo del modal
+options | object | - | -
+
+##### options
+Nombre | Tipo | Valor defecto | Descripción
+size | string | "lg" | Tamaño ventana modal
+scroll | boolean | false | -
+loading | boolean | false | -
+backdrop | string | 'static' | -
+keyboard | boolean | false | -
+scrollTop | boolean | true | -
+
+##### button
+Nombre | Tipo | Valor defecto | Descripción
+close | object | - | -
+confirm | object | - | -
+
+close:{
+			name : "close",
+			id:"buttonClose",
+			label: "Cerrar",
+			status: true
+		},
+		confirm:{
+			name : "confirm",
+			id:"buttonConfirm",
+			label: "Confirmar",
+			status: false
+		}
+
+##### button close
+Nombre | Tipo | Valor defecto | Descripción
+name | string | "close" | -
+id | string | "buttonClose" | -
+label | string | "Cerrar" | -
+status | boolean | true | -
+
+##### button confirm
+Nombre | Tipo | Valor defecto | Descripción
+name | string | "confirm" | -
+id | string | "buttonConfirm" | -
+label | string | "Confirmar" | -
+status | boolean | false | -
+
