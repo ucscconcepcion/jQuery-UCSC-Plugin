@@ -60,6 +60,7 @@ options | object | - | -
 
 ##### options
 Nombre | Tipo | Valor defecto | Descripción
+-------|------|---------------|---------
 size | string | "lg" | Tamaño ventana modal
 scroll | boolean | false | -
 loading | boolean | false | -
@@ -69,24 +70,13 @@ scrollTop | boolean | true | -
 
 ##### button
 Nombre | Tipo | Valor defecto | Descripción
+-------|------|---------------|---------
 close | object | - | -
 confirm | object | - | -
 
-close:{
-			name : "close",
-			id:"buttonClose",
-			label: "Cerrar",
-			status: true
-		},
-		confirm:{
-			name : "confirm",
-			id:"buttonConfirm",
-			label: "Confirmar",
-			status: false
-		}
-
 ##### button close
 Nombre | Tipo | Valor defecto | Descripción
+-------|------|---------------|---------
 name | string | "close" | -
 id | string | "buttonClose" | -
 label | string | "Cerrar" | -
@@ -94,6 +84,7 @@ status | boolean | true | -
 
 ##### button confirm
 Nombre | Tipo | Valor defecto | Descripción
+-------|------|---------------|---------
 name | string | "confirm" | -
 id | string | "buttonConfirm" | -
 label | string | "Confirmar" | -
