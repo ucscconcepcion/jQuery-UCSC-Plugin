@@ -1,0 +1,23 @@
+{
+  "name": "jQuery-UCSC-Plugin",
+  "version": "1.0.0",
+  "description": "* jQuery 1.10.0+\r * Bootstrap 3+",
+  "main": "jquery.ucsc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ucscconcepcion/jquery-ucsc-plugin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ucscconcepcion/jquery-ucsc-plugin/issues"
+  },
+  "homepage": "https://github.com/ucscconcepcion/jquery-ucsc-plugin#readme",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
