@@ -19,5 +19,8 @@
   "homepage": "https://github.com/ucscconcepcion/jquery-ucsc-plugin#readme",
   "dependencies": {
     "express": "^4.16.1"
+  },
+  "devDependencies": {
+    "gulp-uglify": "^3.0.0"
   }
 }
